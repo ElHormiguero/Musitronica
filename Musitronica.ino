@@ -1,4 +1,4 @@
-/* Control de relés y motores paso a paso con interfáz MIDI.
+/* Control de relés y motores paso a paso con interfáz MIDI. Programado en Teensy 3.6
    Autor: Javier Vargas. El Hormiguero.
    https://creativecommons.org/licenses/by/4.0/
 */
@@ -11,8 +11,8 @@
 #define ReleON LOW //Nivel de tensión para el activado del rele
 
 //Notas de entrada MIDI
-const int NotaRele1[Nrele] = {0, 1, 2, 3, 4, 5, 6, 7}; //Channel 0
-const int NotaRele2[Nrele] = {8, 9, 10, 11, 12, 13, 14, 15}; //Channel 0
+const int NotaRele1[Nrele] = {0, 1, 2, 3, 4, 5, 6, 7}; //Channel 10
+const int NotaRele2[Nrele] = {8, 9, 10, 11, 12, 13, 14, 15}; //Channel 10
 //Motores --> //Channel 1, 2, 3, 4, 5, 6, 7, 8
 
 int Tmotors[109]; //Periodos del motor que corresponde a cada nota
